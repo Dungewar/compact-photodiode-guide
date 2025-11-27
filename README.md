@@ -41,11 +41,11 @@ The OPT101P photodiode requires a minimum of 2.7V. Higher input voltages increas
 ### Responsivity
 Although the OPT101P includes a built-in 1MΩ feedback resistor, it did not provide adequate gain for this application. Since gain is directly proportional to resistance and inversely proportional to bandwidth, a 5MΩ resistor was selected to improve monitor detection performance while maintaining reasonable speed.
 
-For usage on the monitor, the photodiode is better at detecting the same brightness change at higher base brighness, as per graph below.
+The photodiode is better at detecting the same relative brightness change at higher base brighness. This means that if a monitor changes from 10% to 20% brightness, the photodiode's output voltage changes by a smaller amount than if the diode changed from 80% to 90%.
 
 ![alt text](image-12.png)
 
-Graph shows how much the photodiode responds for a flickering monitor light that switches from 0% to 10%, 10% to 20%, etc. within 16ms (every frame). Taken from [Photodiode LED Testing](https://docs.google.com/spreadsheets/d/1R1jh_Y6DrDVoqCM2nb0XCUPiysDj50N7ofd7CoB2yAs/edit?gid=680766239#gid=680766239).
+Graph shows how much the photodiode's output voltage responds (changes - ΔV) for a flickering LED light that switches from 0% to 10%, 10% to 20%, etc. within 16ms (every frame). Taken from [Photodiode LED Testing](https://docs.google.com/spreadsheets/d/1R1jh_Y6DrDVoqCM2nb0XCUPiysDj50N7ofd7CoB2yAs/edit?gid=680766239#gid=680766239).
 
 ![alt text](image-2.png)
 
